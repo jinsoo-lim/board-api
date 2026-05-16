@@ -1,0 +1,4 @@
+com/board/domain/post/PostServiceTest.class
+com/board/domain/post/PostControllerTest.class
+com/board/domain/user/UserControllerTest.class
+com/board/domain/user/UserServiceTest.class
