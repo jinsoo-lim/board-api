@@ -29,15 +29,6 @@ jobs:
       - name: 테스트 실행
         run: mvn test
 
-      - name: 테스트 결과 리포트 업로드
-        uses: dorny/test-reporter@v1
-        if: always()
-        with:
-          name: JUnit 테스트 결과
-          path: target/surefire-reports/*.xml
-          reporter: java-junit
-          fail-on-error: false
-
       - name: 테스트 리포트 아티팩트 저장
         uses: actions/upload-artifact@v4
         if: always()
