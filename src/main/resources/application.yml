@@ -14,3 +14,9 @@ jwt:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
+focus:
+  claude:
+    api-key: ${CLAUDE_API_KEY:your-api-key-here}
+    api-url: https://api.anthropic.com/v1/messages
+    model: claude-opus-4-7

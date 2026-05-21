@@ -11,7 +11,9 @@ public enum ErrorCode {
     POST_NOT_FOUND(HttpStatus.NOT_FOUND, "게시글을 찾을 수 없습니다."),
     COMMENT_NOT_FOUND(HttpStatus.NOT_FOUND, "댓글을 찾을 수 없습니다."),
     UNAUTHORIZED(HttpStatus.FORBIDDEN, "수정/삭제 권한이 없습니다."),
-    INVALID_CREDENTIALS(HttpStatus.UNAUTHORIZED, "아이디 또는 비밀번호가 올바르지 않습니다.");
+    INVALID_CREDENTIALS(HttpStatus.UNAUTHORIZED, "아이디 또는 비밀번호가 올바르지 않습니다."),
+    DAILY_TASK_NOT_FOUND(HttpStatus.NOT_FOUND, "태스크를 찾을 수 없습니다."),
+    ONBOARDING_REQUIRED(HttpStatus.BAD_REQUEST, "온보딩을 먼저 완료해주세요.");
 
     private final HttpStatus status;
     private final String message;
